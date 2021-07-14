@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
-with open('README.md', 'r') as file:
-    long_description = file.read()
+with open('README.md', 'r') as fh:
+    long_description = fh.read()
 
 setup(
     name='exchangelib_listener',
@@ -12,5 +12,9 @@ setup(
     long_description_content_type='text/markdown',
     url='https://gitlab.com/evan_brown/exchangelib-listener',
     packages=find_packages(exclude=('test.*')),
-    include_package_data=False
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
 )
