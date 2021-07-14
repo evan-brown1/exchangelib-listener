@@ -12,8 +12,5 @@ setup(
     long_description_content_type='text/markdown',
     url='https://gitlab.com/evan_brown/exchangelib-listener',
     packages=find_packages(exclude=('test.*')),
-    include_package_data=False,
-    install_requires=[
-        'exchangelib'
-    ]
+    include_package_data=False
 )
