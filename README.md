@@ -7,7 +7,7 @@ pip install git+https://gitlab.com/evan_brown/exchangelib-listener.git#egg=excha
 
 
 ## Usage
-Create listener
+Create listener:
 ```python
 from exchangelib import DELEGATE, Account, Credentials, Configuration
 from exchangelib.properties import MovedEvent, NewMailEvent
@@ -30,7 +30,7 @@ acct = Account(
 listener = Listener(acct)
 ```
 
-Create a method to call when events are raised
+Create a method to call when events are raised:
 ```python
 def events_received(events):
     for event in events:
@@ -42,7 +42,7 @@ def events_received(events):
             pass
 ```
 
-Start listener
+Start listener:
 ```python
 listener.streaming_events_received += events_received
 listener.listen()
