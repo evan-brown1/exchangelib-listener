@@ -1,0 +1,14 @@
+# Distribution/Packaging
+__pycache__
+build
+dist
+.eggs
+*.egg-info
+*.egg
+
+# Environments
+.env
+.venv
+
+# Testing
+test.*
