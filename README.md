@@ -3,7 +3,7 @@ Inbox event listener for exchangelib
 This library listens for events in the inbox and raises an event.
 
 ## Installation
-pip install git+https://gitlab.com/evan_brown/exchangelib-listener.git
+'pip install git+https://gitlab.com/evan_brown/exchangelib-listener.git'
 
 
 ## Usage
