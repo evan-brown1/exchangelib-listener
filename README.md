@@ -10,7 +10,7 @@ pip install git+https://gitlab.com/evan_brown/exchangelib-listener.git#egg=excha
 Create listener:
 ```python
 from exchangelib import DELEGATE, Account, Credentials, Configuration
-from exchangelib.properties import MovedEvent, NewMailEvent
+from exchangelib.properties import NewMailEvent, MovedEvent
 from exchangelib_listener import Listener
 
 creds = Credentials(
