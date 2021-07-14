@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 with open('README.md', 'r') as fh:
     long_description = fh.read()
@@ -11,7 +11,7 @@ setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://gitlab.com/evan_brown/exchangelib-listener',
-    packages=find_packages(exclude=('test.*')),
+    packages=['exchangelib_listener'],
     install_requires=[
         'backports.zoneinfo==0.2.1',
         'cached-property==1.5.2',
