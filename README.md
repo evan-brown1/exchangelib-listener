@@ -36,10 +36,8 @@ def events_received(events):
     for event in events:
         if isinstance(event, NewMailEvent):
             # Do something
-            pass
         elif isinstance(event, MovedEvent):
             # Do something
-            pass
 ```
 
 Start listener:
