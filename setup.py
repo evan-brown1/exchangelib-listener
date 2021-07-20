@@ -5,7 +5,7 @@ with open('README.md', 'r') as fh:
 
 setup(
     name='exchangelib_listener',
-    version='1.0.0',
+    version='1.1.0',
     author='Evan Brown',
     description='Simple inbox event listener',
     long_description=long_description,
