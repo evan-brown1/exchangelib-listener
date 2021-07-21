@@ -17,14 +17,14 @@ class Listener:
         for notification in self._account.inbox.get_streaming_events(subscription_id):
             if single is None:
                 self.streaming_events_received(notification.events)
-                break
+                continue
             self.__get_single_event(notification.events, single)
             break
-        self.__get_streaming_events(subscription_id, single)
 
     def listen(self, single: Event=None):
         with self._account.inbox.streaming_subscription() as subscription_id:
-            self.__get_streaming_events(subscription_id, single)
+            while True:
+                self.__get_streaming_events(subscription_id, single)
     
     
     class __EventHandler:
