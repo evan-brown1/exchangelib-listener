@@ -38,15 +38,12 @@ def events_received(events):
             # Do something
         elif isinstance(event, MovedEvent):
             # Do something
-```
 
-Start listener:
-```python
 listener.streaming_events_received += events_received
 listener.listen()
 ```
 
-Optionally receive a single event:
+Or receive a single event:
 ```python
 def new_messaged_received():
     # Do something
