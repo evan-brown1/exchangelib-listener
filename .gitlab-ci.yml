@@ -4,7 +4,7 @@ stages:
     - deploy
 
 before_script:
-    - apt-get install gcc
+    - npm install gcc
     - pip install twine
     - python setup.py sdist
 
