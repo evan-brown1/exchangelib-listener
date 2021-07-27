@@ -7,7 +7,7 @@ setup(
     name='exchangelib_listener',
     version='1.1.0',
     author='Evan Brown',
-    description='Simple inbox event listener',
+    description='Simple inbox event listener for exchangelib.',
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://gitlab.com/evan_brown/exchangelib-listener',
