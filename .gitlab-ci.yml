@@ -13,6 +13,9 @@ deploy_production:
         TWINE_USERNAME: $PRODUCTION_USERNAME
         TWINE_PASSWORD: $PRODUCTION_PASSWORD
     script:
-        - twine upload dist/*
+        - python
+        - import os
+        - print(os.getenv($PRODUCTION_USERNAME))
+        - quit()
     only:
         - tags
