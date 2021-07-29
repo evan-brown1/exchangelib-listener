@@ -7,6 +7,7 @@ setup(
     name='exchangelib_listener',
     version='1.1.0',
     author='Evan Brown',
+    author_email='evan.brown@ttigroupna.com',
     description='Simple inbox event listener for exchangelib.',
     long_description=long_description,
     long_description_content_type='text/markdown',
