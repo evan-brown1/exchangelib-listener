@@ -10,8 +10,12 @@ before_script:
 deploy_production:
     stage: deploy
 
+    variables:
+        - TWINE_USERNAME: $PYPI_USERNAME
+        - TWINE_PASSWORD: $PYPI_PASSWORD
+    
     script:
-        - twine upload dist/* -u "$PYPI_USERNAME" -p "$PYPI_PASSWORD"
+        - twine upload dist/*
     
     only:
         - tags
