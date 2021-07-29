@@ -11,7 +11,7 @@ deploy_production:
     stage: deploy
 
     script:
-        - twine upload dist/*
+        - twine upload dist/* -u $PYPI_USERNAME -p $PYPI_PASSWORD
     
     only:
         - tags
